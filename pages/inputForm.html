@@ -59,9 +59,9 @@
               const salaryOutput = document.querySelector('.salary-output');
               salary.oninput = function () {
                   salaryOutput.textContent = salary.value;
-              };
-  
-              // UC 1: Name validation
+              };  
+           
+        // UC 1: Name validation
               const text = document.querySelector('#text');
               const textError = document.querySelector('.text-error');
               text.addEventListener('input', function () {
@@ -71,8 +71,8 @@
                   else
                       textError.textContent = "Incorrect name";
               });
-  
-              // UC 2 : Email validation
+             
+        // UC 2 : Email validation
               const emailInput = document.querySelector("#email");
               const errorEmail = document.querySelector(".email-error");
               emailInput.addEventListener('input', function () {
@@ -81,9 +81,9 @@
                       errorEmail.textContent = "";
                   else
                       errorEmail.textContent = "Invalid email"
-              });
-  
-              // UC 3 : Mobile no validation
+              });  
+
+        // UC 3 : Mobile no validation
               const mobileInput = document.querySelector("#tel");
               const errorMobile = document.querySelector(".tel-error");
               mobileInput.addEventListener('input', function () {
@@ -95,5 +95,4 @@
               });
       </script>
   </body>
-  </html>
-  
+  </html>              
